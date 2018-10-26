@@ -17,9 +17,11 @@ def pokemongame():
             print("That's right! Good job! Would you like to play again?\nType 'yes' to play again")
             playagain = input('')
             if playagain.lower == 'yes':
-                pass
+                pokemongame()
             else:
                 return "Goodbye!"
         if playeranswer.lower() != pokemonname:
-            return "OOF"
+            return f"Sorry! The correct answer was {pokemonname}"
+
             
+
